@@ -1,13 +1,14 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import { SignupForm } from "@/components/_components/signup";
 
 function Page() {
   return (
-    <div>
-      <Button>Click me</Button>
-      Product Agent
+    <div className="bg-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
+      <div className="w-full max-w-sm">
+        <SignupForm/>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;
