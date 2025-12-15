@@ -1,13 +1,12 @@
+'use client'
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { columns } from "./_components/columns";
 import { DataTable } from "./_components/data-table";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -58,6 +57,8 @@ function Page() {
             </DialogHeader>
           </DialogContent>
         </Dialog>
+      </div>
+      <div>
       </div>
       <div className="px-10">
         <DataTable columns={columns} data={feedbacks} />
